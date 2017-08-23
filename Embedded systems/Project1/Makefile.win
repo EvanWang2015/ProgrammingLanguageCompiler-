@@ -1,30 +1,30 @@
-# Project: Project3
+# Project: Project1
 # Makefile created by Dev-C++ 4.9.9.2
 
 CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = project10-1.o $(RES)
-LINKOBJ  = project10-1.o $(RES)
+OBJ  = MIPSsim.o $(RES)
+LINKOBJ  = MIPSsim.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
-BIN  = PetriNetSimulator.exe
+BIN  = MIPSsim.exe
 CXXFLAGS = $(CXXINCS)  
 CFLAGS = $(INCS)  
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before PetriNetSimulator.exe all-after
+all: all-before MIPSsim.exe all-after
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CPP) $(LINKOBJ) -o "PetriNetSimulator.exe" $(LIBS)
+	$(CPP) $(LINKOBJ) -o "MIPSsim.exe" $(LIBS)
 
-project10-1.o: project10-1.cpp
-	$(CPP) -c project10-1.cpp -o project10-1.o $(CXXFLAGS)
+MIPSsim.o: MIPSsim.cpp
+	$(CPP) -c MIPSsim.cpp -o MIPSsim.o $(CXXFLAGS)
