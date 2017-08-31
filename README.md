@@ -6,4 +6,4 @@ These were my first c++ code ever...
 
 # Project 3: Find the most frequently appeared strings while making use of fibonacciheap and maps 
 
-# Project 4: radiation evluation paper
+# Project 4: radiation evaluation paper
